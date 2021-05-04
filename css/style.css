@@ -212,6 +212,7 @@ h1, h2, h3, h4, h5, h6 {
     background-repeat: no-repeat;
     background-size:cover;
     width: 100%;
+    margin-left: 60px;
   }
   #profile:before{
     content:"";
