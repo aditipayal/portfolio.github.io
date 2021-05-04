@@ -164,6 +164,45 @@ h1, h2, h3, h4, h5, h6 {
 
   /* End Header Area */
 
+  /* Section CSS */
+  section {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  
+  .section-bg {
+    background: #f5f8fd;
+  }
+  
+  .section-title {
+    padding-bottom: 30px;
+  }
+  
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+  }
+  
+  .section-title h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #149ddd;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .section-title p {
+    margin-bottom: 0;
+  }
+  /* End Section CSS */
+
   /*  Start profile header */
   #profile{
     height: 100vh;
@@ -225,6 +264,17 @@ h1, h2, h3, h4, h5, h6 {
    margin-bottom: 30px;
   }
 }
+@media (min-width:468px){
+  .wrapper h1{
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .wrapper h2{
+   font-size: 18px;
+   line-height: 24px;
+   margin-bottom: 30px;
+  }
+}
  .wrapper span:before{
    content: '';
    animation: animate infinite 8s;
@@ -250,120 +300,102 @@ h1, h2, h3, h4, h5, h6 {
  /* End Profile Header */
 
   /* Start About Page  */
-
-  #about{
-    margin: 0px; 
-    height: 130vh;
-    display: inline-block;;
-    width: 100%;
-    overflow-x:auto;
-  }
-  .about_title h1{
-      color: black;
-      text-decoration: bold;
-      font-weight: 800;
-      font-size: 40px;
-      padding: 10px,0,0,0;  
-  }
-  .about .content h2{
-    font-weight: 700;
-    font-size: 26px;
-    color:black;
-  }
-  .about .content p{
-    font-size: 16px;
-    color:black;
-  }
-  .about .content ul{
-    list-style: none;
-    padding:0;
-  }
-  .about .content ul li{
-    padding-bottom: 10px;
+.about_title h1{
     color: black;
-  }
+    text-decoration: bold;
+    font-weight: 800;
+    font-size: 40px;
+    padding: 10px,0,0,0;  
+}
+.about .content h2{
+  font-weight: 700;
+  font-size: 26px;
+  color:black;
+}
+.about .content p{
+  font-size: 16px;
+  color:black;
+}
+.about .content ul{
+  list-style: none;
+  padding:0;
+}
+.about .content ul li{
+  padding-bottom: 10px;
+  color: black;
+}
 
-  .about .content ul i{
-    font-size: 20px;
-    padding-right: 1px;
-    color: blue;
-  }
+.about .content ul i{
+  font-size: 20px;
+  padding-right: 1px;
+  color: blue;
+}
 
-  .about .content p:last-child{
-      margin-bottom: 0;
-  }
+.about .content p:last-child{
+    margin-bottom: 0;
+}
 
-  .social-media a{
-    font-size: 18px;
-    display: inline-block;
-    background: #212431;
-    color: #fff;
-    line-height: 1;
-    padding: 10px 0;
-    margin-right: 10px;
-    border-radius: 50%;
-    text-align: center;
-    width: 36px;
-    height: 36px;
-    transition: 0.3s;
-  }
-  .cv_button a{
-    color: teal;
-  }
+.social-media a{
+  font-size: 18px;
+  display: inline-block;
+  background: #212431;
+  color: #fff;
+  line-height: 1;
+  padding: 10px 0;
+  margin-right: 10px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+.cv_button a{
+  color: teal;
+}
 
-  /* End About US Page  */
+/* End About US Page  */
 
-  /* Skills and Expretise page  */
-
-  #skills{
-      margin: 0px; 
-      height: 120vh;
-      display: inline-block;;
-      width: 100%;
-      position: relative;
-      overflow-y: auto;
-      overflow-x: auto;
+/* Skills and Expretise page  */
+.skills .professional-skills{
+  padding-right: 60px;
+  color:black;
+}
+.skills .professional-skills h3{
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 60px;
+  font-family: 'Poppins' sans-serif ;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: teal;
+}
+.professional-skills{
+  padding-left:5%;
+  color: white;
+}
+.professional-skills h3{
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 60px;
+  font-family: 'Poppins' sans-serif ;
+}
+.professional-progress{
+  left:0;
+  padding-right: 20px;
+  text-align: center;
   }
-  .skills .professional-skills{
-    padding-right: 60px;
-    color:black;
-  }
-  .skills .professional-skills h3{
-    font-size: 30px;
-    line-height: 40px;
-    text-align: center;
-    font-weight: 400;
-    margin-bottom: 60px;
-    font-family: 'Poppins' sans-serif ;
-    text-decoration: underline;
-    text-underline-position: under;
-    text-decoration-color: teal;
-  }
- .professional-skills{
-    padding-left:5%;
-    color: white;
-  }
-  .professional-skills h3{
-    font-size: 30px;
-    line-height: 40px;
-    text-align: center;
-    font-weight: 400;
-    margin-bottom: 60px;
-    font-family: 'Poppins' sans-serif ;
-  }
-  .professional-progress{
-   left:0;
-   padding-right: 20px;
-   text-align: center;
-   }
-  .professional-progress li{
-   display: inline-block;
-   margin: 0 auto;
-   float: none;
-   width: 48%;
-   margin-bottom: 30px;
-   text-align: center; 
-  }
+.professional-progress li{
+  display: inline-block;
+  margin: 0 auto;
+  float: none;
+  width: 48%;
+  margin-bottom: 30px;
+  text-align: center; 
+}
 .progress .progress-circle{
   display: inline-block;
   width: 100px;
@@ -440,16 +472,12 @@ h1, h2, h3, h4, h5, h6 {
 
  /*  Start resume section */
 
- #resume{
- }
 
  .main-timeline {
   position: relative;
   margin: 0;
   height: 200vh;
-  overflow-y: auto;
 }
-
 .main-timeline:before {
   content: "";
   display: block;
@@ -693,13 +721,4 @@ h1, h2, h3, h4, h5, h6 {
   .main-timeline .title {
       margin-bottom: 10px;
   }
-  /* End resume section  */
-  /* contact page */
-#contact{
-  margin: 0px;
-  position: relative;
-  display: inline-block;;
-  width: 100%;
-  overflow-y: auto;
-}
-/* End of contact page  */}
+  /* End resume section  */}
