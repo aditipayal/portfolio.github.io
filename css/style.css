@@ -188,23 +188,24 @@ h1, h2, h3, h4, h5, h6 {
   #profile .wrapper{
     position: relative;
     z-index: 2;
-    min-width: 300px;
+    min-width: 350px;
   }
  #profile .wrapper h1{
     margin: 0 0 10px 0;
-    color: #fff;
+    color:black;
     font-size: 64px;
     font-weight: 700;
     line-height: 56px;
+    left: 0;
  }
  #profile .wrapper p{
-   color: #fff;
+   color:black;
    font-size: 34px;
    margin-bottom: 50px;
    font-family: "Poppins", sans-serif;
  }
  .wrapper p span{
-   color: #fff;
+   color:#111;
    padding-bottom: 4px;
    letter-spacing: 1px;
    border-bottom: 3px solid #14999d;
@@ -253,7 +254,7 @@ h1, h2, h3, h4, h5, h6 {
 
   #about{
     margin: 0px; 
-    height: 100vh;
+    height: 120vh;
     background:#3a3e44;
     display: inline-block;;
     width: 100%;
@@ -692,17 +693,6 @@ h1, h2, h3, h4, h5, h6 {
       margin-bottom: 10px;
   }
   /* End resume section  */
-
-  /* Area of Interest Section page  */
-  #hobby{
-    margin: 0px;
-    height: 100vh;
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    background: #232323;
-  }
-
   /* contact page */
 #contact{
   margin: 0px;
