@@ -16,7 +16,9 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
- /* Header Area  */
+
+ /* Start Header Area  */
+
 #header {
     position: fixed;
     top: 0;
@@ -87,9 +89,8 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
   
-  /*--------------------------------------------------------------
-  # Navigation Menu
-  --------------------------------------------------------------*/
+  /* Start Navigation Menu */
+
   /* Desktop Navigation */
   .nav-menu {
     padding: 30px 0 0 0;
@@ -132,6 +133,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   /* Mobile Navigation */
+
   .mobile-nav-toggle {
     position: fixed;
     right: 15px;
@@ -161,7 +163,9 @@ h1, h2, h3, h4, h5, h6 {
     color: #149ddd;
   }
 
-  /* profile header */
+  /* End Header Area */
+
+  /*  Start profile header */
   #profile{
     height: 100vh;
     display: inline-block;;
@@ -242,7 +246,11 @@ h1, h2, h3, h4, h5, h6 {
     content: 'Learner';
   }
  }
-  /* About Page  */
+
+ /* End Profile Header */
+
+  /* Start About Page  */
+
   #about{
     margin: 0px; 
     height: 100vh;
@@ -303,7 +311,11 @@ h1, h2, h3, h4, h5, h6 {
   .cv_button a{
     color: teal;
   }
+
+  /* End About US Page  */
+
   /* Skills and Expretise page  */
+
   #skills{
       background-color:slategray;
       margin: 0px; 
@@ -415,22 +427,24 @@ h1, h2, h3, h4, h5, h6 {
    border-top-left-radius: 10px;
    border-bottom-left-radius:10px;
    background: #0bceaf;
-   -webkit-transition: 3s all;
-   -webkit-animation-duration: 3s;
-   -webkit-animation-name:animationProgress;
+   transition: 3s all;
+   animation-duration: 3s;
+   animation-name:animationProgress;
    font-family: 'Poppins', sans-serif;
-
  }
  @keyframes animationProgress{
    from{
      width: 0;
    }
  }
- /* resume section */
+
+ /* End Skills and Professional Section  */
+
+ /*  Start resume section */
  .main-timeline {
   position: relative;
   margin: 0;
-  height: 150vh;
+  height: 200vh;
   overflow-y: auto;
 }
 
@@ -571,7 +585,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-timeline .month {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700
 }
 
@@ -672,27 +686,30 @@ h1, h2, h3, h4, h5, h6 {
   .main-timeline .timeline:nth-child(2n) .timeline-content {
       width: 95%;
       text-align: center;
-      padding: 10px 0
+      padding: 10px 0;
   }
   .main-timeline .title {
-      margin-bottom: 10px
+      margin-bottom: 10px;
   }
-  /* portfolio page  */
-  #portfolio{
-    margin: 0px;
-    height: 700px;
-    background: salmon;
-    display: inline-block;;
-    width: 100%;
-  }
+  /* End resume section  */
 
-  /* contact page */
-  #contact{
+  /* Area of Interest Section page  */
+  #hobby{
     margin: 0px;
     height: 100vh;
     position: relative;
-    background: indianred;
-    display: inline-block;;
+    display: inline-block;
     width: 100%;
-    overflow-y: auto;
+    background: #232323;
+  }
+
+  /* contact page */
+#contact{
+  margin: 0px;
+  height: 50vh;
+  position: relative;
+  display: inline-block;;
+  width: 100%;
+  overflow-y: auto;
 }
+/* End of contact page  */}
