@@ -45,13 +45,12 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
     font-weight: 600;
-    -moz-text-align-last: center;
     text-align-last: center;
     font-family: "Poppins", sans-serif;
   }
   
   #header .profile h1 a, #header .profile h1 a:hover {
-    color: #fff;
+    color:teal;
     text-decoration: none;
   }
   
@@ -134,7 +133,7 @@ h1, h2, h3, h4, h5, h6 {
   
   /* Mobile Navigation */
 
-  .mobile-nav-toggle {
+  .mobile-nav-toggle{
     position: fixed;
     right: 15px;
     top: 15px;
@@ -208,7 +207,7 @@ h1, h2, h3, h4, h5, h6 {
    color:#111;
    padding-bottom: 4px;
    letter-spacing: 1px;
-   border-bottom: 3px solid #14999d;
+   border-bottom: 3px solid teal;
  }
  @media (min-width:1024px){
    #profile{
@@ -229,9 +228,9 @@ h1, h2, h3, h4, h5, h6 {
  .wrapper span:before{
    content: '';
    animation: animate infinite 8s;
-   text-decoration: underline;
-   text-decoration-color: #149ddd;
-  text-underline-position: under;
+   /* text-decoration: underline;
+   text-decoration-color: white;
+  text-underline-position: under; */
  } 
  @keyframes animate{
    0%{
@@ -254,14 +253,13 @@ h1, h2, h3, h4, h5, h6 {
 
   #about{
     margin: 0px; 
-    height: 120vh;
-    background:#3a3e44;
+    height: 130vh;
     display: inline-block;;
     width: 100%;
     overflow-x:auto;
   }
   .about_title h1{
-      color: white;
+      color: black;
       text-decoration: bold;
       font-weight: 800;
       font-size: 40px;
@@ -270,11 +268,11 @@ h1, h2, h3, h4, h5, h6 {
   .about .content h2{
     font-weight: 700;
     font-size: 26px;
-    color:#fff;
+    color:black;
   }
   .about .content p{
     font-size: 16px;
-    color:#fff;
+    color:black;
   }
   .about .content ul{
     list-style: none;
@@ -282,13 +280,13 @@ h1, h2, h3, h4, h5, h6 {
   }
   .about .content ul li{
     padding-bottom: 10px;
-    color: #68e0cf;
+    color: black;
   }
 
   .about .content ul i{
     font-size: 20px;
     padding-right: 1px;
-    color: #149ddd;
+    color: blue;
   }
 
   .about .content p:last-child{
@@ -318,7 +316,6 @@ h1, h2, h3, h4, h5, h6 {
   /* Skills and Expretise page  */
 
   #skills{
-      background-color:slategray;
       margin: 0px; 
       height: 120vh;
       display: inline-block;;
@@ -329,7 +326,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .skills .professional-skills{
     padding-right: 60px;
-    color:white;
+    color:black;
   }
   .skills .professional-skills h3{
     font-size: 30px;
@@ -442,6 +439,10 @@ h1, h2, h3, h4, h5, h6 {
  /* End Skills and Professional Section  */
 
  /*  Start resume section */
+
+ #resume{
+ }
+
  .main-timeline {
   position: relative;
   margin: 0;
@@ -696,7 +697,6 @@ h1, h2, h3, h4, h5, h6 {
   /* contact page */
 #contact{
   margin: 0px;
-  height: 50vh;
   position: relative;
   display: inline-block;;
   width: 100%;

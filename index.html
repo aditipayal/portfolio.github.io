@@ -8,6 +8,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='./css/style.css'>
     <link rel='stylesheet' href='css/progresscircle.css'>
+    <link rel='stylesheet' href='css/icofont.min.css'>
     <script src='./js/main.js'></script>
     <!-- jquery links -->
     <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
@@ -25,7 +26,6 @@
     </script>
     </head>
     <body>
-    <i class='fas fa-list mobile-nav-toggle d-xl-none'></i>
 
   <!-- =======  Start Header Section  ======= -->
   <header id='header'>
@@ -41,15 +41,17 @@
         </div>
       </div>
       <nav id='navbar' class='nav-menu navbar'>
-        <ul>
-        <li class='text-center'><a href='#profile' class='nav-link scrollto active'><i class='fas fa-home'></i><span>Home</span></a></li>
-        <li class='text-center'><a href='#about' class='nav-link scrollto'><i class='far fa-user'></i><span>&nbsp;About</span></a></li>
-        <li class='text-center'><a href='#skills' class='nav-link scrollto'><i class='far fa-file'></i><span>&nbsp;Skills</span></a></li>
-        <li class='text-center'><a href='#resume' class='nav-link scrollto'><i class='fas fa-bookmark'></i><span>&nbsp;Work Experience</span></a></li>
-        <li class='text-center'><a href='#contact' class='nav-link scrollto'><i class='far fa-envelope'></i><span>&nbsp;Contact</span></a></li>
-        <li class='text-center'><a href='https://drive.google.com/file/d/1HPv3JDslvPu0MJgQAZkxz16_I6Z2GDMn/view?usp=sharing' target="blank" class='nav-link scrollto'><i class='fas fa-download'></i><span>&nbsp;Download CV</span></a></li>
+        <ul class="justify-content-center">
+        <li><a href='#profile' class='nav-link scrollto active'><i class='fas fa-home'></i><span>Home</span></a></li>
+        <li><a href='#about' class='nav-link scrollto'><i class='far fa-user'></i><span>About</span></a></li>
+        <li><a href='#skills' class='nav-link scrollto'><i class='far fa-file'></i><span>Skills</span></a></li>
+        <li><a href='#resume' class='nav-link scrollto'><i class='fas fa-bookmark'></i><span>Work Experience</span></a></li>
+        <li><a href='#contact' class='nav-link scrollto'><i class='far fa-envelope'></i><span>Contact</span></a></li>
+        <li><a href='https://drive.google.com/file/d/1HPv3JDslvPu0MJgQAZkxz16_I6Z2GDMn/view?usp=sharing' target="blank" class='nav-link scrollto'><i class='fas fa-download'></i><span>&nbsp;Download CV</span></a></li>
         </ul>
+      </div>
       </nav><!-- .nav-menu -->
+      <button type ='button' class='mobile-nav-toggle d-xl-none'><i class="icofont-navigation-menu"></i></button>
     </div>
   </header>
  <!--=========== End Header Section ========-->
@@ -65,7 +67,7 @@
   <!--=========== End Profile Section ========-->
   <!--=========== Start Main Content Area========-->
   <main id='main'>
-
+<hr>
  <!--=========== Start About Us Section ========-->
   <section id='about' class='about'>
     <div class='container'>
@@ -114,17 +116,17 @@
    </section>
    <!--============= End About Us Section ============ -->
   <!--============ Start Skills Section ==========-->
-
+<hr>
   <section id='skills' class='skills justify-content-center align-items-center'>
       <div class='container'>
         <div class='section-title'>
-          <h1 class='text-center mt-4'> My Skills</h1>
+          <h1 class='text-center pt-4'> My Skills</h1>
         </div>
         <div class='row'>
           <div class='col-sm-12 col-md-6'>
             <div class='skills_inner'>
               <div class='professional-skills'> 
-                <h3 class='text-center mt-4'>Technical Skills</h3>
+                <h3 class='text-center pt-4'>Technical Skills</h3>
                  <div class='each-skills'>
                    <div class='candidatos'>
                      <div class='parcial'>
@@ -198,19 +200,19 @@
           </div>
           <div class='col-sm-12 col-md-6 justify-content-center align-items-center'>
             <div class='professional-skills'>
-              <h3 class='text-center mt-4'>Professional Skills</h3>
+              <h3 class='text-center pt-4'>Professional Skills</h3>
               <ul class='professional-progress'>
                   <li>
-                    <div class='circlechart progress-circle mr-5' data-percentage='80'>Communication</div>
+                    <div class='circlechart progress-circle pr-5' data-percentage='80'>Communication</div>
                   </li>
                   <li>
-                    <div class='circlechart progress-circle ml-5' data-percentage='90'>Team Work</div>
+                    <div class='circlechart progress-circle pl-5' data-percentage='90'>Team Work</div>
                   </li>
                   <li>
-                    <div class='circlechart progress-circle mr-5' data-percentage='80'>Project Management</div>
+                    <div class='circlechart progress-circle pr-5' data-percentage='80'>Project Management</div>
                   </li>
                   <li>
-                    <div class='circlechart progress-circle ml-5' data-percentage='90'>Creativity</div>
+                    <div class='circlechart progress-circle pl-5' data-percentage='90'>Creativity</div>
                   </li>
               </ul>
             </div>
@@ -221,10 +223,10 @@
 
   <!--===========End Skills Section =============-->
   <!-- ======= Resume Section ======= -->
-
+<hr>
   <section id='resume' class='resume'>
     <div class='container'>
-      <h1 class='text-center mt-5 mb-5'>Work Experience</h1>
+      <h1 class='text-center pt-4 pb-3'>Work Experience</h1>
     <div class='main-timeline'>
 
        <!-- start experience section-->
@@ -334,7 +336,7 @@
     </div>
   </div>
   </section>
-
+<hr>
   <!--=========== End Resume Section ========-->
   <!--=========== Start Contact Section ========-->
   <section id='contact' class='contact'>
@@ -351,7 +353,6 @@
         Email id: <a href='https://mail.google.com/mail/u/0/#inbox?compose=new'>aditipayalagarwal@gmail.com</a></p>
       </div>
       <center>&copy;2021 Designed by Aditi</center>
-    </div>
   </section>
 
   <!--=========== End Contact Section ========-->
