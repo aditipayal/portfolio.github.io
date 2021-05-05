@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   #header .profile h1 a, #header .profile h1 a:hover {
-    color:teal;
+    color:white;
     text-decoration: none;
   }
   
@@ -118,8 +118,11 @@ h1, h2, h3, h4, h5, h6 {
   
   .nav-menu a i {
     font-size: 24px;
-    padding-right: 8px;
+    padding-right:8px;
     color: #6f7180;
+  }
+  .nav-menu a span{
+      padding-left: 10px;
   }
   
   .nav-menu a:hover, .nav-menu .active, .nav-menu li:hover > a {
@@ -206,13 +209,10 @@ h1, h2, h3, h4, h5, h6 {
   /*  Start profile header */
   #profile{
     height: 100vh;
-    display: inline-block;;
     background-image: url("../images/background.jpg");
-    background-position: 100% 100%;
-    background-repeat: no-repeat;
+    background-position:center;
     background-size:cover;
     width: 100%;
-    margin-left: 60px;
   }
   #profile:before{
     content:"";
@@ -231,20 +231,20 @@ h1, h2, h3, h4, h5, h6 {
   }
  #profile .wrapper h1{
     margin: 0 0 10px 0;
-    color:black;
+    color: white;
     font-size: 64px;
     font-weight: 700;
     line-height: 56px;
     left: 0;
  }
  #profile .wrapper p{
-   color:black;
+   color:white;
    font-size: 34px;
    margin-bottom: 50px;
    font-family: "Poppins", sans-serif;
  }
  .wrapper p span{
-   color:#111;
+   color:white;
    padding-bottom: 4px;
    letter-spacing: 1px;
    border-bottom: 3px solid teal;
@@ -279,9 +279,6 @@ h1, h2, h3, h4, h5, h6 {
  .wrapper span:before{
    content: '';
    animation: animate infinite 8s;
-   /* text-decoration: underline;
-   text-decoration-color: white;
-  text-underline-position: under; */
  } 
  @keyframes animate{
    0%{
@@ -358,7 +355,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Skills and Expretise page  */
 .skills .professional-skills{
-  padding-right: 60px;
+  padding-right: 40px;
   color:black;
 }
 .skills .professional-skills h3{
@@ -386,7 +383,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .professional-progress{
   left:0;
-  padding-right: 20px;
+  padding-right:20px;
   text-align: center;
   }
 .professional-progress li{
@@ -397,19 +394,24 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 30px;
   text-align: center; 
 }
+@media (max-width:468px){
+  .professional-progress li{
+    width:68%;
+  }
+}
 .progress .progress-circle{
   display: inline-block;
   width: 100px;
   height: 100px;
-}
-.progress .progress-circle p{
-  color: white;
 }
 .progress path:nth-child(1){
   stroke: rgba(0,0,0,0.7);
 }
 .progress path:nth-child(2){
   stroke: #0bceaf !important;
+}
+.professional-skills .each-skills{
+   padding-left: 30px;
 }
 .candidatos .parcial{
   display: inline-block;
@@ -457,7 +459,7 @@ h1, h2, h3, h4, h5, h6 {
    height: 7px;
    border-top-left-radius: 10px;
    border-bottom-left-radius:10px;
-   background: #0bceaf;
+   background: teal;
    transition: 3s all;
    animation-duration: 3s;
    animation-name:animationProgress;
