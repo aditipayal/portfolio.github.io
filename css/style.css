@@ -479,7 +479,7 @@ h1, h2, h3, h4, h5, h6 {
  .main-timeline {
   position: relative;
   margin: 0;
-  height: 140vh;
+  height: 195vh;
 }
 .main-timeline:before {
   content: "";
@@ -493,7 +493,11 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   right: 0
 }
-
+@media (max-width: 1190px) {
+  .main-timeline {
+    height: 150vh;
+  }
+}
 .main-timeline .timeline {
   margin-bottom: 40px;
   position: relative
